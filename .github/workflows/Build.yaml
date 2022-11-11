@@ -50,7 +50,7 @@ jobs:
           path: app/build/reports
 
   androidTest:
-    nees: build
+    needs: build
     runs-on: macOS-latest
     timeout-minutes: 55
     strategy:
