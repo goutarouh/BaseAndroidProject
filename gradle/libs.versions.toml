@@ -1,5 +1,5 @@
 [versions]
-androidx-activity-compose = "1.5.1"
+androidx-activity-compose = "1.6.1"
 androidx-appcompat = "1.5.1"
 androidx-core-ktx = "1.7.0"
 androidx-constraintlayout = "2.1.3"
