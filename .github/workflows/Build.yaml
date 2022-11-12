@@ -1,8 +1,5 @@
 name: Build
 on:
-  push:
-    branches:
-      - main
   pull_request:
     paths-ginore:
       - '**.md'
@@ -58,7 +55,7 @@ jobs:
     timeout-minutes: 55
     strategy:
       matrix:
-        api-level: [26, 30]
+        api-level: [26, 30, 31]
 
     steps:
       - name: Checkout
