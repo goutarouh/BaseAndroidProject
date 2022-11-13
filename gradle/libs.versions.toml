@@ -11,6 +11,10 @@ dagger-hilt = "2.44.1"
 google-material = "1.5.0"
 junit-junit = "4.13.2"
 
+compileSdkVersion = "33"
+minSdkVersion = "26"
+targetSdkVersion = "33"
+
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity-compose" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx-appcompat" }

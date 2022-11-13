@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace = "com.github.goutarouh.baseandroidproject.data"
-    compileSdk = 33
+    compileSdk = libs.versions.compileSdkVersion.get().toInt()
 
     defaultConfig {
-        minSdk = 26
-        targetSdk = 33
+        minSdk = libs.versions.minSdkVersion.get().toInt()
+        targetSdk = libs.versions.targetSdkVersion.get().toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -23,6 +23,11 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+    sourceSets {
+        getByName("main").java.srcDir("src/main/kotlin")
+        getByName("test").java.srcDir("src/test/kotlin")
+        getByName("androidTest").java.srcDir("src/androidTest/kotlin")
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
