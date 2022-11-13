@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "com.github.goutarouh.baseandroidproject"
-    compileSdk = 33
+    compileSdk = libs.versions.compileSdkVersion.get().toInt()
 
     defaultConfig {
         applicationId = "com.github.goutarouh.baseandroidproject"
-        minSdk = 26
-        targetSdk = 33
+        minSdk = libs.versions.minSdkVersion.get().toInt()
+        targetSdk = libs.versions.targetSdkVersion.get().toInt()
         versionCode = 1
         versionName = "1.0"
 
